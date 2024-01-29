@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="path/to/your/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!--^========>start Animate.CSS <========-->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--^========>end  Animate.CSS <========-->
+    <!--!========>start fontawsome css file  <========-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--!========>end fontawsome css file  <========-->
+    <!--?========>start bootstrap css file  <========-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--?========>end bootstrap css file  <========-->
+    <!--*========>start main css file  <========-->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--*========>end main css file  <========-->
+  </head>
+  <body class="bg-dark">
+    <!--^ =====>end section loading setup  <===== -->
+    <section id="loading">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </section>
+    <!--^ =====>end section loading setup  <===== -->
+    <!-- ?--------------------------------------------------------------- -->
+    <!--^ =====>strat section one sidebar layout  <===== -->
+    <section id="sidbar">
+      <div class="sidbar-inner d-flex flex-column justify-content-between">
+        <div class="dark-mood d-flex justify-content-evenly">
+          <i class="fa-solid fa-moon fa-2x mb-4 darck"></i>
+          <i class="fa-regular fa-moon fa-2x mb-4 light"></i>
+        </div>
+        <div
+          class="heading animate__animated animate__backInUp animate__delay-2s"
+        >
+          <p class="animate__animated animate__wobble animate__delay-4s Search">
+            Search
+          </p>
+          <p
+            class="animate__animated animate__wobble animate__delay-4s Categories"
+          >
+            Categories
+          </p>
+          <p class="animate__animated animate__wobble animate__delay-4s Area">
+            Area
+          </p>
+          <p
+            class="animate__animated animate__wobble animate__delay-4s Ingredients"
+          >
+            Ingredients
+          </p>
+          <p
+            class="animate__animated animate__wobble animate__delay-4s Contact-Us"
+          >
+            Contact Us
+          </p>
+        </div>
+        <div id="content-container">
+          <!-- Placeholder for dynamic content -->
+        </div>
+        <div>
+          <h6>please choose any color</h6>
+          <span class="color-box"></span>
+          <span class="color-box"></span>
+          <span class="color-box"></span>
+          <span class="color-box"></span>
+          <span class="color-box"></span>
+          <span class="color-box"></span>
+        </div>
+        <div>
+          <a
+            href="https://github.com/MahmoudELdeba34 "
+            target="_blank"
+            class="me-2"
+            ><i class="fa-brands fa-github text-white"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mahmoud-ahmed-986276196"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin text-white"></i
+          ></a>
+          <p>Copyright Â© 2024 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="outer d-flex flex-column justify-content-between text-center">
+        <div><img src="images/logo.png" alt="" class="" /></div>
+        <div id="myDiv">
+          <i class="fa-solid fa-times fa-2x mo text-black"></i>
+        </div>
+        <div class="">
+          <div>
+            <a
+              href="https://github.com/MahmoudELdeba34 "
+              target="_blank"
+              class="text-black"
+              ><i class="fa-solid fa-globe text-black"></i
+            ></a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/mahmoud-ahmed-986276196"
+              target="_blank"
+              ><i class="fa-solid fa-share-nodes text-black"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--^ ====> end section one sidebar layout <===== -->
+    <!-- ?--------------------------------------------------------------- -->
+    <!--^ ====> end section two  Search layout <===== -->
+    <section id="search">
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4 mt-5">
+            <input
+              id="searchByNameBtn"
+              type="search"
+              class="form-control bg-black"
+              placeholder="Search By Name "
+              aria-label="Last name"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <input
+              id="searchByLetterBtn"
+              type="search"
+              class="form-control bg-black"
+              placeholder="Search By First Letter"
+              aria-label="First name"
+              maxlength="1"
+            />
+          </div>
+        </div>
+        <div class="row" id="searchByfullName">
+          <!-- !this is use in display as i did not deleted it  -->
+          <!-- <div class="parent col-md-3 position-relative ">
+                <div class="item ms-5">
+                    <img src=''alt="" class="w-100" id="imgForFull">
+                <div class="child position-absolute bg-info ms-5">
+                    <p id="searchDec">mahmoud</p>
+                </div>
+                </div>
+            </div> -->
+        </div>
+      </div>
+    </section>
+    <!--^ ====> end section two  Search layout <===== -->
+    <!-- ?--------------------------------------------------------------- -->
+    <!--^ ====> start section three defult layout <===== -->
+    <section id="defult-display" class="mt-5">
+      <div class="container">
+        <div class="row mt-4" id="defult">
+          <!-- !this is use in display as i did not deleted it  -->
+          <!-- <div class="col-md-3 mb-4 rounded-4 ">
+                        <div class="item rounded-4">
+                            <img src="images/logo.png" alt="" class="w-100">
+                        </div>
+                    </div> -->
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--^ ====> end section three defult layout <===== -->
+    <!-- ?--------------------------------------------------------------- -->
+    <!--^ ====> strat section four Categories layout <===== -->
+    <section id="Categories" class="mahmoud">
+      <div class="container">
+        <div class="row" id="Category">
+          <div class="parent col-md-3 position-relative overflow-hidden">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+          <div class="parent col-md-3 position-relative">
+            <div class="item">
+              <img src="images/logo.png" alt="" class="w-100" />
+              <div class="child position-absolute bg-info">
+                <p>mahmoud</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--^ ====> end section four Categories layout <===== -->
+    <!-- ?--------------------------------------------------------------- -->
+    <!--^ ====> start section five Area layout <===== -->
+    <section id="Area">
+      <div class="container">
+        <div class="row" id="city">
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div id="capital"><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <div class="item text-center">
+              <div>
+                <i class="fa-solid fa-house fa-4x text-white text-center"></i>
+              </div>
+              <div><h5 class="text-white">egypt</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--^ ====> end section five Area layout <===== -->
+    <!-- ?--------------------------------------------------------------- -->
+    <!--^ ====> start section six Area layout <===== -->
+    <section id="Ingredients">
+      <div class="container">
+        <div class="row" id="Ingredient">
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2 id="uniqueItemIdentifier">chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center mt-5 text-white">
+            <div class="item">
+              <i class="fa-solid fa-utensils fa-4x"></i>
+              <h2>chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur molestiae minus voluptate quasi ducimus enim similique,
+                beatae incidunt sequi illo. Magni, placeat alias, sunt,
+                consequuntur libero ea esse praesentium perferendis vitae
+                officiis ad aspernatur eligendi velit culpa? Nemo nisi culpa
+                cupiditate consectetur incidunt. Ad molestiae error optio rerum,
+                sapiente libero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--^ ====> end section six Area layout <===== -->
+    <!-- ?--------------------------------------------------------------- -->
+    <!--^ ====> start section seven Contact Us layout <===== -->
+    <section id="Contact">
+      <div class="container">
+        <div class="row my-auto">
+          <div class="col-md-6 mt-5">
+            <input type="text" class="form-control bg-transparent " id="name"
+            placeholder="Enter Your Name"" aria-label="Enter Your Name">
+          </div>
+          <div class="col-md-6 mt-5">
+            <input
+              type="email"
+              class="form-control bg-transparent"
+              id="email"
+              placeholder="Enter Your Email"
+              aria-label="Enter Your Email"
+            />
+          </div>
+          <div class="col-md-6 mt-5">
+            <input
+              type="phone"
+              class="form-control bg-transparent"
+              id="phone"
+              placeholder="Enter Your Phone Number"
+              aria-label="Enter Your Email"
+            />
+          </div>
+          <div class="col-md-6 mt-5">
+            <input
+              type="number"
+              class="form-control bg-transparent"
+              id="age"
+              placeholder="Enter Your Age"
+              aria-label="Enter Your Age"
+            />
+          </div>
+          <div class="col-md-6 mt-5">
+            <input
+              type="password"
+              class="form-control bg-transparent"
+              id="password"
+              placeholder="Enter Your Password"
+              aria-label="Enter Your Password"
+            />
+          </div>
+          <div class="col-md-6 mt-5">
+            <input
+              type="password"
+              class="form-control bg-transparent"
+              id="rePassword"
+              placeholder="Please Re-Password"
+              aria-label="Please Re-Password"
+            />
+          </div>
+          <button
+            id="submitBtn"
+            class="btn w-25 btn-danger mx-auto m-5 disabled"
+          >
+            Submet
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--^ ====> end section seven Contact Us layout <===== -->
+    <!-- ?--------------------------------------------------------------- -->
+    <!--^ ====> start section eghit display layout <===== -->
+    <section id="display m-5">
+      <div class="container text-white">
+        <div class="row mt-5" id="displayFullMeal">
+          <!-- !this is use in display as i did not deleted it  -->
+          <!-- <div class="col-md-3">
+                <div class="item text-center">
+                    <img src="images/logo.png" alt="" class="w-100">
+                    <h2>sushi</h2>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="item">
+                    <h2>Instructions</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat rem atque qui ratione. Alias, quo? Modi similique earum in impedit, provident perferendis quae doloremque enim ullam, cumque, porro ipsam maxime tempora! Odio, tempore. At culpa illum quidem, enim veritatis adipisci laborum amet omnis, expedita molestias quisquam, quia dolores obcaecati.</p>
+                    <h3>Area :japanes</h3>
+                    <h3>Category : Seafood</h3>
+                    <h3>Recipes :</h3>
+                    <ul class="list-unstyled d-flex flex-wrap g-3">
+                        <li class="alert alert-info m-2 p-1">300ml sushi rice</li>
+                        <li class="alert alert-info m-2 p-1">300ml rice wine</li>
+                        <li class="alert alert-info m-2 p-1">2 tbs caster suger</li>
+                        <li class="alert alert-info m-2 p-1">3 tbs moonnmys </li>
+                        <li class="alert alert-info m-2 p-1">300 tbs rice wine</li>
+                        <li class="alert alert-info m-2 p-1">1 tbs soy sauce </li>
+                        <li class="alert alert-info m-2 p-1">1 cucaber</li>
+                    </ul>
+                    <h3 >Tags :</h3>
+                    <a href="" target="_blank" class="btn btn-success">Source</a>
+                    <a href="" target="_blank" class="btn btn-danger">Youtube</a>
+                </div>
+            </div> -->
+        </div>
+      </div>
+    </section>
+    <!--^ ====> end section eghit display layout <===== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
+
+<!-- ! ------------------------------------------------------------ Thank You ------------------------------------------------------------------>
+<!-- ~---------------------------------------------------------------For reading------------------------------------------------------------- -->
