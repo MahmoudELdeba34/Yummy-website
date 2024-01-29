@@ -1,12 +1,9 @@
 # Yummy-website
-
-Certainly! Let's delve into more details with an introductory overview of how you might structure and implement the described functionalities in your web application.
 Project Structure:
 HTML Structure:
 Main HTML file (index.html) containing the structure of the web page.
 Sections for the side navigation menu, search, categories, area, ingredients, contact us, and meal display.
-html
-Copy code
+/***********************************************************************************************************************************
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,8 +22,8 @@ Copy code
 CSS Styling:
 Separate CSS file (styles.css) for styling the HTML elements.
 Consider using flexbox or grid for layout and responsive design.
-css
-Copy code
+
+/*************************************************************************************************************************************
 /* Styles for side navigation menu, search, categories, area, ingredients, contact us, and meal display */
 JavaScript Logic:
 Separate JavaScript file (script.js) for handling the dynamic behavior and interactions.
